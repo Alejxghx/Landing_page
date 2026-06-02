@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dev Duo | Full Stack Developers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="bracket">[</span>DEV<span class="accent">HACK</span><span class="bracket">]</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero">Inicio</a></li>
+      <li><a href="#about">Nosotros</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#tech">Tech Stack</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-noise"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span> "Duo mode: ON"
+      </div>
+      <h1 class="hero-title">
+        <span class="line" data-delay="0">Construimos</span>
+        <span class="line accent-glow" data-delay="100">software</span>
+        <span class="line" data-delay="200">que importa.</span>
+      </h1>
+      <p class="hero-sub">
+        Somos un dúo de <span class="highlight">desarrolladores full stack</span> apasionados por crear experiencias digitales de alto impacto.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+        <a href="#contact" class="btn btn-ghost">Contáctanos</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" data-target="20">0</span>+<p>Proyectos</p></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="3">0</span>+<p>Años exp.</p></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="15">0</span>+<p>Clientes</p></div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="code-window">
+        <div class="code-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="code-title">team.js</span>
+        </div>
+        <pre class="code-body"><code><span class="c-keyword">const</span> <span class="c-var">team</span> = {
+  <span class="c-prop">nombre</span>: <span class="c-str">"Dev Hack"</span>,
+  <span class="c-prop">miembros</span>: [
+    { <span class="c-prop">nombre</span>: <span class="c-str">"Robert García"</span>, <span class="c-prop">rol</span>: <span class="c-str">"Backend"</span> },
+    { <span class="c-prop">nombre</span>: <span class="c-str">"Andy García"</span>, <span class="c-prop">rol</span>: <span class="c-str">"Frontend"</span> }
+  ],
+  <span class="c-prop">stack</span>: [<span class="c-str">"React"</span>, <span class="c-str">"Node"</span>, <span class="c-str">"Python"</span>, <span class="c-str">"Java Script"</span>, <span class="c-str">"HTML"</span>, <span class="c-str">"CSS"</span>, <span class="c-str">"SQL"</span>, <span class="c-str">"NO SQL"</span>, <span class="c-str">"Angular"</span>],
+  <span class="c-prop">disponible</span>: <span class="c-bool">true</span>,
+  <span class="c-prop">build</span>: () <span class="c-keyword">=></span> {, 
+  <span class="c-keyword">return</span> <span class="c-str">"🚀 Algo épico"</span>;
+  }
+};</code></pre>
+      </div>
+      <div class="glow-orb orb1"></div>
+      <div class="glow-orb orb2"></div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-tag">// 01 — Sobre Nosotros</div>
+      <h2 class="section-title">El <span class="accent-glow">equipo</span> detrás del código</h2>
+
+      <div class="team-grid">
+        <!-- Card 1 -->
+        <div class="team-card" data-index="1">
+          <div class="card-glow"></div>
+          <div class="card-top">
+            <div class="avatar-ring">
+              <div class="avatar">RG</div>
+            </div>
+            <div class="card-role-badge">Backend Dev</div>
+          </div>
+          <h3>Robert García</h3>
+          <p class="card-handle">@ Alejx_ghx</p>
+          <p class="card-bio">Desarrollador backend con pasión por la arquitectura de sistemas escalables, APIs robustas y bases de datos optimizadas. Creo en el código limpio como arte.</p>
+          <div class="card-tags">
+            <span>Node.js</span>
+            <span>Python</span>
+            <span>PostgreSQL</span>
+            <span>Java Script</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>SQL</span>
+            <span>NO SQL</span>
+            <span>Angular</span>
+          </div>
+          <div class="card-socials">
+            <a href="#" aria-label="GitHub">GH</a>
+            <a href="#" aria-label="LinkedIn">LI</a>
+            <a href="#" aria-label="Twitter">IG</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="team-card card-alt" data-index="2">
+          <div class="card-glow"></div>
+          <div class="card-top">
+            <div class="avatar-ring">
+              <div class="avatar">AG</div>
+            </div>
+            <div class="card-role-badge">Frontend Dev</div>
+          </div>
+          <h3>Andy García</h3>
+          <p class="card-handle">@ andygarcia0821</p>
+          <p class="card-bio">Desarrollador frontend obsesionado con UX/UI, animaciones fluidas e interfaces accesibles. Transformo diseños en experiencias que los usuarios aman.</p>
+          <div class="card-tags">
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>Tailwind</span>
+            <span>Java Script</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>SQL</span>
+            <span>NO SQL</span>
+            <span>Angular</span>
+          </div>
+          <div class="card-socials">
+            <a href="#" aria-label="GitHub">GH</a>
+            <a href="#" aria-label="LinkedIn">LI</a>
+            <a href="#" aria-label="Twitter">IG</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-tag">// 02 — Habilidades</div>
+      <h2 class="section-title">Lo que <span class="accent-glow">dominamos</span></h2>
+
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <div class="skill-icon">⚡</div>
+          <h3>Frontend</h3>
+          <div class="skill-bars">
+            <div class="skill-bar"><span>React / Next.js</span><div class="bar"><div class="bar-fill" data-w="92"></div></div><b>92%</b></div>
+            <div class="skill-bar"><span>TypeScript</span><div class="bar"><div class="bar-fill" data-w="85"></div></div><b>85%</b></div>
+            <div class="skill-bar"><span>CSS / Animations</span><div class="bar"><div class="bar-fill" data-w="90"></div></div><b>90%</b></div>
+            <div class="skill-bar"><span>Vue.js</span><div class="bar"><div class="bar-fill" data-w="75"></div></div><b>75%</b></div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-icon">🔧</div>
+          <h3>Backend</h3>
+          <div class="skill-bars">
+            <div class="skill-bar"><span>Node.js / Express</span><div class="bar"><div class="bar-fill" data-w="90"></div></div><b>90%</b></div>
+            <div class="skill-bar"><span>Python / Django</span><div class="bar"><div class="bar-fill" data-w="82"></div></div><b>82%</b></div>
+            <div class="skill-bar"><span>REST APIs</span><div class="bar"><div class="bar-fill" data-w="95"></div></div><b>95%</b></div>
+            <div class="skill-bar"><span>GraphQL</span><div class="bar"><div class="bar-fill" data-w="70"></div></div><b>70%</b></div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-icon">🗄️</div>
+          <h3>Bases de Datos & DevOps</h3>
+          <div class="skill-bars">
+            <div class="skill-bar"><span>PostgreSQL</span><div class="bar"><div class="bar-fill" data-w="88"></div></div><b>88%</b></div>
+            <div class="skill-bar"><span>MongoDB</span><div class="bar"><div class="bar-fill" data-w="80"></div></div><b>80%</b></div>
+            <div class="skill-bar"><span>Docker</span><div class="bar"><div class="bar-fill" data-w="78"></div></div><b>78%</b></div>
+            <div class="skill-bar"><span>AWS / Cloud</span><div class="bar"><div class="bar-fill" data-w="72"></div></div><b>72%</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section class="tech" id="tech">
+    <div class="container">
+      <div class="section-tag">// 03 — Tech Stack</div>
+      <h2 class="section-title">Nuestras <span class="accent-glow">herramientas</span></h2>
+      <p class="section-sub">Tecnologías que usamos día a día para construir productos de calidad.</p>
+
+      <div class="tech-grid">
+        <div class="tech-item reveal" style="--i:0"><div class="tech-logo">⚛️</div><span>React</span></div>
+        <div class="tech-item reveal" style="--i:1"><div class="tech-logo">📗</div><span>Node.js</span></div>
+        <div class="tech-item reveal" style="--i:2"><div class="tech-logo">🐍</div><span>Python</span></div>
+        <div class="tech-item reveal" style="--i:3"><div class="tech-logo">🔷</div><span>TypeScript</span></div>
+        <div class="tech-item reveal" style="--i:4"><div class="tech-logo">🐳</div><span>Docker</span></div>
+        <div class="tech-item reveal" style="--i:5"><div class="tech-logo">🐘</div><span>PostgreSQL</span></div>
+        <div class="tech-item reveal" style="--i:6"><div class="tech-logo">🍃</div><span>MongoDB</span></div>
+        <div class="tech-item reveal" style="--i:7"><div class="tech-logo">☁️</div><span>AWS</span></div>
+        <div class="tech-item reveal" style="--i:8"><div class="tech-logo">▲</div><span>Next.js</span></div>
+        <div class="tech-item reveal" style="--i:9"><div class="tech-logo">🐙</div><span>Git / GitHub</span></div>
+        <div class="tech-item reveal" style="--i:10"><div class="tech-logo">🔴</div><span>Redis</span></div>
+        <div class="tech-item reveal" style="--i:11"><div class="tech-logo">🧪</div><span>Testing</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-tag">// 04 — Proyectos</div>
+      <h2 class="section-title">Trabajo <span class="accent-glow">destacado</span></h2>
+
+      <div class="projects-grid">
+        <div class="project-card featured reveal">
+          <div class="project-num">01</div>
+          <div class="project-tags"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+          <h3>Plataforma E-Commerce</h3>
+          <p>Sistema completo de comercio electrónico con panel de administración, pagos integrados y dashboard de analíticas en tiempo real.</p>
+          <div class="project-footer">
+            <a href="#" class="project-link">Ver Proyecto →</a>
+            <a href="#" class="project-link ghost">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-num">02</div>
+          <div class="project-tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span></div>
+          <h3>API de Gestión Empresarial</h3>
+          <p>REST API escalable para gestión de recursos humanos, inventarios y reportes automatizados.</p>
+          <div class="project-footer">
+            <a href="#" class="project-link">Ver Proyecto →</a>
+            <a href="#" class="project-link ghost">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-num">03</div>
+          <div class="project-tags"><span>Next.js</span><span>TypeScript</span><span>AWS</span></div>
+          <h3>Dashboard de Analíticas</h3>
+          <p>Panel de control con visualizaciones en tiempo real, métricas de negocio y reportes exportables.</p>
+          <div class="project-footer">
+            <a href="#" class="project-link">Ver Proyecto →</a>
+            <a href="#" class="project-link ghost">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-num">04</div>
+          <div class="project-tags"><span>React Native</span><span>Node.js</span></div>
+          <h3>App Mobile de Delivery</h3>
+          <p>Aplicación móvil multiplataforma con tracking en tiempo real, pasarela de pagos y notificaciones push.</p>
+          <div class="project-footer">
+            <a href="#" class="project-link">Ver Proyecto →</a>
+            <a href="#" class="project-link ghost">GitHub →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-tag">// 05 — Contacto</div>
+      <h2 class="section-title">¿Tienes un <span class="accent-glow">proyecto</span>?</h2>
+      <p class="section-sub">Estamos disponibles para nuevos proyectos. Escríbenos y hablamos.</p>
+
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="ci-icon">📧</span>
+            <div><p class="ci-label">Email</p><a href="mailto:hola@devduo.com">hola@devduo.com</a></div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-icon">📍</span>
+            <div><p class="ci-label">Ubicación</p><p>Ecuador 🇪🇨</p></div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-icon">🕐</span>
+            <div><p class="ci-label">Disponibilidad</p><p>Lun - Vie, 9am - 6pm</p></div>
+          </div>
+          <div class="contact-socials">
+            <a href="#" class="social-btn">GitHub</a>
+            <a href="#" class="social-btn">LinkedIn</a>
+            <a href="#" class="social-btn">Twitter</a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Nombre</label>
+              <input type="text" id="fname" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-group">
+              <label for="femail">Email</label>
+              <input type="email" id="femail" placeholder="tu@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fsubject">Asunto</label>
+            <input type="text" id="fsubject" placeholder="¿De qué trata tu proyecto?" />
+          </div>
+          <div class="form-group">
+            <label for="fmessage">Mensaje</label>
+            <textarea id="fmessage" rows="5" placeholder="Cuéntanos sobre tu idea..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">
+            <span>Enviar Mensaje</span> <span class="arrow">→</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo"><span class="bracket">[</span>DEV<span class="accent">DUO</span><span class="bracket">]</span></div>
+      <p>Construido con ❤️ y mucho ☕ — Ecuador 🇪🇨</p>
+      <p class="footer-copy">© 2025 Dev Duo. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
