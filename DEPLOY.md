@@ -64,39 +64,6 @@ Luego abre:
 http://localhost:8080
 ```
 
-## Deploy en Google Cloud Run
-
-Primero inicia sesion:
-
-```bash
-gcloud auth login
-```
-
-Selecciona tu proyecto de Google Cloud:
-
-```bash
-gcloud config set project TU_ID_DEL_PROYECTO
-```
-
-Activa las APIs necesarias:
-
-```bash
-gcloud services enable run.googleapis.com cloudbuild.googleapis.com artifactregistry.googleapis.com
-```
-
-Construye y sube la imagen con Cloud Build:
-
-```bash
-gcloud builds submit --tag gcr.io/TU_ID_DEL_PROYECTO/landing-cloud-run
-```
-
-Despliega en Cloud Run:
-
-```bash
-gcloud run deploy landing-cloud-run --image gcr.io/TU_ID_DEL_PROYECTO/landing-cloud-run --platform managed --region us-central1 --allow-unauthenticated --port 8080
-```
-
-Cuando termine, Google Cloud mostrara una URL publica. Ese es el enlace de tu landing page desplegada.
 
 ## Que hace cada comando
 
