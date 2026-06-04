@@ -189,3 +189,11 @@ if (codeBody) {
   const codeWindow = document.querySelector('.code-window');
   if (codeWindow) observer.observe(codeWindow);
 }
+
+// Forzar visibilidad después de cargar
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    revealElements();
+    animateSkillBars();
+  }, 100);
+});
